@@ -1,0 +1,50 @@
+.form__container {
+    display: flex;
+    margin: auto;
+    max-width: 700px;
+    width: 90%;
+
+    input {
+        border: none;
+        box-shadow: 2px 2px 11px transparentize($color: $light-grey, $amount: 0.5);
+        color: $dark-grey;
+        padding: 1.2rem 1rem;
+        width: 100%;
+
+        transition: 200ms ease;
+
+        &:focus {
+            outline: none;
+
+            &::placeholder {
+
+                color:#fff
+            }
+        }
+
+        &::placeholder {
+            transition: 200ms ease;
+            color: $light-grey;
+        }
+    }
+
+    button {
+        background-color: $primary;
+        border: none;
+        border-radius: 0 5px 5px 0;
+        box-shadow: 2px 2px 11px transparentize($color: $light-grey, $amount: 0.5);
+        color: #fff;
+        padding: 1rem;
+
+        transition: 200ms ease;
+
+        &:hover {
+            background-color: darken($color: $primary, $amount: 10);
+        }
+
+        &:active {
+            background-color: darken($color: $primary, $amount: 20);
+        }
+    }
+
+}

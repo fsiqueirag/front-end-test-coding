@@ -1,0 +1,109 @@
+.users__screen {
+    background-color: $secondary-light;
+    min-height: 100vh;
+    padding: 4rem 0;
+    width: 100%;
+}
+
+.users__container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    max-width: 700px;
+    min-height: 300px;
+    text-align: center;
+}
+
+.users__list {
+    margin: auto;
+    padding: 2rem 0;
+    width: 100%;
+}
+
+.users__list-item {
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 2px 2px 11px transparentize($color: $light-grey, $amount: 0.5);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    position: relative;
+    transition: 200ms ease transform;
+    width: 100%;
+
+    &:hover {
+        transform: scale(1.02);
+    }
+
+    p {
+        margin: 0;
+    }
+}
+
+.users__user-preview-container {
+    padding: 1rem 0.7rem;
+    width: 100%;
+}
+
+.users__user-preview {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    text-align: left;
+    width: 100%;
+}
+
+.users__user-avatar {
+    border-radius: 100%;
+    width: 50px;
+}
+
+.users__user-login {
+    color: $dark-grey;
+    font-weight: 500;
+}
+
+.users__user-id-label {
+    color: darken($color: $primary, $amount: 10);
+    font-weight: 900;
+}
+
+.users__user-id {
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-align: right;
+}
+
+.users__profile-button {
+    background-color: darken($color: $primary, $amount: 10);
+    border: 0;
+    color: #fff;
+    font-size: 1rem;
+    height: 100%;
+    padding: 2.5rem 1rem;
+    
+    transition: 200ms ease;
+
+    &:hover {
+        color: #fff;
+        opacity: 0.9;
+    }
+}
+
+@media (max-width: 767px) {
+    .users__list-item:hover {
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 450px) {
+    .users__user-login {
+        font-size: 0.8rem;
+    }
+
+    .users__user-id {
+        font-size: 0.7rem;
+    }
+}
+

@@ -1,0 +1,104 @@
+.user__screen {
+    align-items: center;
+    background-color: $secondary-light;
+    display: flex;
+    min-height: 100vh;
+    height: 100%;
+    justify-content: center;
+}
+
+.user__box {
+    background-color: #fff;
+    box-shadow: 2px 2px 11px transparentize($color: $light-grey, $amount: 0.5);
+    max-width: 800px;
+    position: relative;
+    width: 100%;
+}
+
+.user__avatar {
+    padding: 0;
+}
+
+@media (max-width: 767px) {
+    .user__box {
+        justify-content: center;
+        padding: 2rem;
+        text-align: center;
+    }
+    
+    .user__avatar {
+        border-radius: 100%;
+        max-width: 150px;
+    }
+}
+
+.user__profile-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1.2rem;
+}
+
+.user__name {
+    font-weight: 600;
+    margin-top: 20px;
+}
+.user__login {
+    font-size: 1rem;
+    color: dark-grey;
+    margin-bottom: 20px;
+}
+
+.user__bio {
+    color: $neutral;
+}
+
+.user__social {
+    float: right;
+    font-size: 50px;
+    margin-right: 10px;
+    width: 50px;
+    transition: 200ms ease;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.user__twitter {
+    color: $twitter;
+
+    &:hover {
+        color: $twitter;
+    }
+}
+
+.user__github {
+    color: $dark-grey;
+
+    &:hover {
+        color: $dark-grey;
+    }
+}
+
+.user__location {
+    color: $light-grey;
+    float: right;
+}
+
+.user__previous {
+    color: $neutral;
+    font-size: 1.2rem;
+    font-weight: 700;
+    left: 20px;
+    padding: 1rem;
+    position: absolute;
+    text-decoration: none;
+    top: 20px;
+
+    transition: 200ms color ease;
+
+    &:hover {
+        color: $primary;
+    }
+}

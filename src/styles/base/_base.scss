@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: $secondary-light;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: darken($color: $primary, $amount: 10);
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: darken($color: $primary, $amount: 20);
+  }
+
+* {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  background-color: $secondary-light;
+  width: 100%;
+}
+
+li {
+  list-style: none;
+}
